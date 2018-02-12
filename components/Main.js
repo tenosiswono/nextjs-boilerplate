@@ -1,5 +1,5 @@
 import React from 'react'
-import css from '../style/index.scss'
+import css from '../styles/index.scss'
 
 const Main = () => (
   <div className={css.main}>Main</div>

@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="Nextjs Boilerplate" />
           <meta name="theme-color" content="#2F80ED" />
-          <link rel="stylesheet" type="text/css" href="/_next/static/style.css" />
+          {process.env.NODE_ENV === 'production' && <link rel="stylesheet" href="/_next/static/style.css" />}
         </Head>
         <body style={{ margin: 0 }}>
           <Main />
