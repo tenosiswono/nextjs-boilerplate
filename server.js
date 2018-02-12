@@ -1,3 +1,4 @@
+require('@zeit/next-preact/alias')()
 const express = require('express')
 const { join } = require('path')
 const { parse } = require('url')

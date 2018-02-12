@@ -17,8 +17,7 @@ function bundles (app) {
         app.precaches = app.precaches.concat(files
           .filter(file => file !== 'index.js' && file !== '_document.js')
           .map(file => {
-            // req /_next/22321e97-8895-48db-b915-82e255f3faa8/new
-            return path.join(root, file.replace(/.js$/, ''))
+            return path.join(root, file)
           })
         )
       }
